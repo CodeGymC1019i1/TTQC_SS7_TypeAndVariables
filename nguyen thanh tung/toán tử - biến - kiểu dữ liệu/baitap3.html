@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1 align="center">bài tập : ứng dụng máy tính</h1>
+        <div style="height: 100px; width: 25%; border: 1px coral; background: red ">
+                <table>
+                    <tr>
+                        <td colspan="2"><input type="number" id="firtnumber"></td>
+                        <td colspan="2"><input type="number" id="secondnumber"></td>
+            
+                    </tr>
+                    <tr>
+                        <td><button id="addition" onclick="addition();">Addition(+)</button></td>
+                        <td><button id="subtraction" onclick="subtraction();">Subtraction(-)</button></td>
+                        <td><button id="multi" onclick="multi();">Multiplication(*)</button></td>
+                        <td><button id="division" onclick="division();">Division(/)</button></td>
+                    </tr>
+            
+                    <tr>
+                        <td id="result" colspan="3"></td>
+                    </tr>
+                </table>
+            </div>
+            <script>
+                function addition() {
+                    let num1 = parseFloat(document.getElementById('firtnumber').value);
+                    let num2 = parseFloat(document.getElementById('secondnumber').value);
+                    document.getElementById('result').innerHTML = "Result addition = " + (num1+num2);
+                }
+                function subtraction() {
+                    let num1 = parseFloat(document.getElementById('firtnumber').value);
+                    let num2 = parseFloat(document.getElementById('secondnumber').value);
+                    document.getElementById('result').innerHTML = "Result subtraction = " + (num1-num2);
+                }
+                function multi() {
+                    let num1 = parseFloat(document.getElementById('firtnumber').value);
+                    let num2 = parseFloat(document.getElementById('secondnumber').value);
+                    document.getElementById('result').innerHTML = "Result multi = " + (num1*num2);
+                }
+                function division() {
+                    let num1 = parseFloat(document.getElementById('firtnumber').value);
+                    let num2 = parseFloat(document.getElementById('secondnumber').value);
+                    document.getElementById('result').innerHTML = "Result division = " + (num1/num2);   
+                }
+            </script>
+
+</body>
+</html>

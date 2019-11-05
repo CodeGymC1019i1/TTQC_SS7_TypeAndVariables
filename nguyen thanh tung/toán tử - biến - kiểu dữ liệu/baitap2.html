@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/baitap2.js"></script>
+</head>
+<body>
+        <h1 align="center">Bài tập: chuyển đổi tiền tệ</h1>
+        <form>
+            <span>Amount</span>
+
+            <input type="text" name="amount" id="amount">
+
+            <span>From Currency</span>
+            <select name="form" id="from">
+                <option value="23000">VNĐ</option>
+                <option value="1">USD</option>
+                <option value="0.85">EURO</option>
+            </select>
+
+            <span>To Currency</span>
+            <select name="to" id="to">
+                <option value="23000">VNĐ</option>
+                <option value="1">USD</option>
+                <option value="0.85">EURO</option>
+            </select>
+
+            <input type="button" value="convert" onclick="convert()" >
+            <br>
+            <span id="result" style="color: blue;"></span>
+        </form>
+</body>
+</html>
