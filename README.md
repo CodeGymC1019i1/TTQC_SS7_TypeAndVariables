@@ -1,0 +1,1 @@
+# TTQC_SS7_TypeAndVariables
