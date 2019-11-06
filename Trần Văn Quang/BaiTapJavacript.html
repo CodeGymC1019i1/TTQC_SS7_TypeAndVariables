@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Các bài tập Javascript</title>
+</head>
+<body>
+<!--Bai tinh tong tinh gia tri trung binh-->
+    <b>Bài tính trung bình và tổng điểm</b><br/>
+    Điểm  Vật Lý:<input type="text" id="toan"><br/>
+    Điểm Hóa Học:<input type="text" id="ly"><br/>
+    Điểm Sinh Học:<input type="text" id="hoa"><br/>
+    <input type="button" value="Trung binh" onclick="diemTB()"><br/>
+<!--Doi do c sang do F-->
+    <b>Đổi dộ c sang độ F</b><br/>
+    Nhập độ C:<input type="number" id="do">
+    <input type="button" value="Đổi" onclick="doido()"><br/>
+<!--Tinh dien tich hinh tron-->
+    <b>Diện tích và chu vi hình tròn</b><br/>
+    Nhập bán kính hình tròn:<input type="number" id="dt">
+    <input type="button" onclick="dienTich()" value="Tính"><br/>
+<!--Chuyển đổi tiền tệ-->
+<b>Chuyển đổi tiền tệ</b><br/>
+<p>Nhập số tiền cần chuyển:</p>
+<input type="number" id="sotien">
+<select id="form">
+    <option value="1">USA</option>
+    <option value="23000">VND</option>
+    <option value="0.85">EURO</option>
+</select>
+<select id="to">
+    <option value="1">USA</option>
+    <option value="23000">VND</option>
+    <option value="0.85">EURO</option>
+</select>
+<input type="button" onclick="doiTien()" value="Chuyển Đổi"><br/>
+<script src="javascriptCacBT.js"></script>
+</body>
+</html>
