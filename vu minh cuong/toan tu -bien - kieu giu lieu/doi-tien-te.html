@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài tập: Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+
+<body>
+    Số tiền:
+    <input type="text" value="" id="sotien">
+    Tiền gốc:
+    <select id="tiengoc">
+        <option>USD</option>
+        <option>VND</option>
+    </select>
+    Tiền đổi:
+    <select id="tiendoi">
+        <option>VND</option>
+        <option>USD</option>
+    </select>
+    <input type="button" value="Đổi tiền" onclick="changeMoney();">
+    <br/>
+    <span id="result"></span>
+    <script>
+        function changeMoney() {
+            let sotien = document.getElementById("sotien").value;
+            let tiengoc = document.getElementById("tiengoc").value;
+            let tiendoi = document.getElementById("tiendoi").value;
+            let result = sotien;
+            if (tiengoc == "USD" && tiendoi == "VND") {
+                result = sotien * 23000;
+            }
+            else if (tiengoc == "VND" && tiendoi == "USD") {
+                result = sotien / 23000;
+            }
+            document.getElementById('result').innerText = "Số tiền sau khi chuyển là: " + result;
+        }
+    </script>
+</body>
+
+</html>

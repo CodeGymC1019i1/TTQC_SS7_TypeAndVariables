@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nhập điểm một sinh viên</title>
+</head>
+
+<body>
+    <script>
+        let vl = prompt("Nhập điểm vật lý:");
+        let hh = prompt("Nhập điểm hóa học:");
+        let sh = prompt("Nhập điểm sinh học:");
+        let vatly = parseInt(vl);
+        let hoahoc = parseInt(hh);
+        let sinhhoc = parseInt(sh);
+        let tb = (vatly + hoahoc + sinhhoc) / 3;
+        let t = vatly + hoahoc + sinhhoc;
+
+        document.write("Điểm trung bình: " + tb);
+        document.write("<br/>");
+        document.write("Điểm tổng: " + t);
+    </script>
+</body>
+
+</html>
