@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ungdungchuyendoitiente</title>
+</head>
+<body>Sotien:
+<input type="text" value="" id="sotien"><br>
+Tien goc
+<select  id="tiengoc">
+    <option>USD</option>
+    <option>VND</option>
+</select><br>
+Tien doi
+<select  id="tiendoi">
+    <option>USD</option>
+    <option>VND</option>
+</select>
+<br>
+<input type="button" value="Doitien" onclick="changemoney();">
+<br>
+<span id="result"></span>
+<script>
+    function changemoney() {
+        let sotien = document.getElementById("sotien").value;
+        let tiengoc = document.getElementById("tiengoc").value;
+        let tiendoi = document.getElementById("tiendoi").value;
+        let result = sotien;
+        if (tiengoc == "USD"&&tiendoi == "VND"){result= sotien*23000
+        }
+        else if(tiengoc == "VND"&&tiendoi == "USD"){ result = sotien/23000;
+        }
+        document.getElementById("result").innerText = 'so tien chuyen doi la: ' + result;
+    }
+</script>
+</body>
+</html>

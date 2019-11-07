@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Ungdungmaytinh</title>
+</head>
+<body>
+<div>
+    <table bgcolor="blue">
+    <tr>
+        <td colspan="2"><input type="number" id="firstnumber"></td>
+        <td colspan="2"><input type="number" id="secondnumber"></td>
+    </tr>
+    <tr>
+        <td><button id="addition" onclick="addition()">addition(+)</button></td>
+        <td><button id="subtraction" onclick="subtraction()">subtraction(-)</button></td>
+        <td><button id="multi" onclick="multi()">multication(*)</button></td>
+        <td><button id="div" onclick="div()">division(/)</button></td>
+    </tr>
+    <tr>
+        <td id="result" colspan="3"></td>
+    </tr>
+    </table>
+</div>
+<script>
+    function addition(){
+        let a = parseFloat(document.getElementById('firstnumber').value);
+        let b = parseFloat(document.getElementById('secondnumber').value);
+        document.getElementById('result').innerHTML = "Resvit addition =" + (a+b)
+    }
+    function subtraction(){
+        let a = parseFloat(document.getElementById('firstnumber').value);
+        let b = parseFloat(document.getElementById('secondnumber').value);
+        document.getElementById('result').innerHTML = "Resvit addition =" + (a-b)
+    }
+    function multi(){
+        let a = parseFloat(document.getElementById('firstnumber').value);
+        let b = parseFloat(document.getElementById('secondnumber').value);
+        document.getElementById('result').innerHTML = "Resvit addition =" + (a*b)
+    }
+    function div(){
+        let a = parseFloat(document.getElementById('firstnumber').value);
+        let b = parseFloat(document.getElementById('secondnumber').value);
+        document.getElementById('result').innerHTML = "Resvit addition =" + (a/b)
+    }
+</script>
+</body>
+</html>
